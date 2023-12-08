@@ -1,0 +1,89 @@
+/* body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: #728FCE;
+} */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
+
+.main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 20px;
+}
+.navbarList {
+  width: 590px;
+  list-style: none;
+  display: flex;
+  color: azure;
+  align-items: center;
+  justify-content: space-between;
+  color: #fff;
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: uppercase;
+}
+.signupLogin{
+    display: flex;
+    justify-content: space-between;
+    gap: 9px;
+    margin-left: 40px;
+}
+.signupBtn{
+    display: flex;
+    padding: 8px 24px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px;
+    border-radius: 100px;
+    font-family: "Montserrat", sans-serif;
+    background: #5CB3FF;
+    border: none;
+    color: #FFF;
+text-align: center;
+font-size: 15px;
+font-style: normal;
+font-weight: 500;
+}
+.login{
+    display: flex;
+padding: 8px 22px;
+flex-direction: column;
+align-items: flex-start;
+gap: 4px;
+background: none;
+font-family: "Montserrat", sans-serif;
+color: #FFF;
+text-align: center;
+font-size: 15px;
+font-style: normal;
+font-weight: 500;
+border-radius: 100px;
+border: 2px solid #FFF;
+}
+.maindiv{
+    width: 75%;
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: antiquewhite;
+}
+.text{
+    width: 47%;
+    background-color: rgb(100, 58, 7);
+
+}
+.boldLetters{
+    
+}
