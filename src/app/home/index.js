@@ -1,13 +1,34 @@
+"use client"
 import logo from "../../../public/assets/images/Group 2.png";
 import Image from "next/image";
-import { Button, ButtonGroup } from "@chakra-ui/react";
+import mobile from "../../../public/assets/images/mobile.png";
+import { Button } from "@chakra-ui/react"
+import React, {useState} from "react";
 // import style from '../page.module.css'
+import { RxCross1 } from "react-icons/rx";
+import guideline from '../home/data'
 import style from "../styles/landingPage.module.css";
+import {
+  Drawer,
+  DrawerBody,
+  DrawerFooter,
+  DrawerHeader,
+  DrawerOverlay,
+  DrawerContent,
+  DrawerCloseButton,
+  useDisclosure,
+  RadioGroup,
+  Stack,
+  Radio,
+} from '@chakra-ui/react'
 export default function LandingPage() {
+   let data= guideline
+   const { isOpen, onOpen, onClose } = useDisclosure()
+   const [placement, setPlacement] = useState('top')
   return (
     <div className={style.main}>
-      <div className={style.navbar}>
-        <Image src={logo} alt="logo" />
+      {/* <div className={style.navbar}>
+        <Image className={style.logo} src={logo} alt="logo" />
         <div>
           <ul className={style.navbarList}>
             <li>TRADING</li>
@@ -17,21 +38,79 @@ export default function LandingPage() {
           </ul>
         </div>
         <div className={style.signupLogin}>
-          <Button colorScheme="blue" className={style.signupBtn}>
+          <Button  className={style.signupBtn}>
             Sign Up
           </Button>
-          <Button colorScheme="blue" className={style.login}>
+          <Button  className={style.login}>
             Login
           </Button>
         </div>
       </div>
       <div className={style.maindiv}>
         <div className={style.text}>
-         <span className={style.boldLetters}> Unlock</span> Your <span className={style.boldLetters}>Financial Potential</span>  with Our Exclusive Path of Stable,
-          Long-term Income through Stocks, Indices, and Digital Assets.
+          <p>
+            <span className={style.boldLetters}> Unlock</span> Your{" "}
+            <span className={style.boldLetters}>Financial Potential</span> with
+            Our Exclusive Path of Stable, Long-term Income through Stocks,
+            Indices, and Digital Assets.
+          </p>
+          <Button className={style.regestrationBtn}>Register now</Button>
         </div>
-        <div>hi</div>
+        <div className={style.mobileImag}>
+          <div className={style.boxShadow}>
+            <Image className={style.mobileImg} src={mobile} alt="helllo" />
+          </div>
+        </div>
       </div>
+      <div className={style.whiteMain}>
+        <p className={style.globalfxP}>
+        <span className={style.globalFxBoldLetter}>Globalfx500</span> – Providing You With Everything You Need To Trade Right
+        </p>
+      </div>
+      <div className={style.guidence}>
+      {data.map(item => (
+        <div className={style.guidelineData} key={item.id}>
+
+          <Image src={item.icon} alt={`Icon for guideline ${item.id}`} />
+          <p className={style.dataP}>{item.text}</p>
+        </div>
+      ))}
+      </div> */}
+<div className={style.mobileView}>
+<>
+      
+      <Button colorScheme='blue' onClick={onOpen}>
+        Open
+      </Button>
+      <Drawer placement={placement} onClose={onClose} isOpen={isOpen}>
+        <DrawerOverlay />
+        <DrawerContent className={style.drawer}>
+        <Image className={style.logo} src={logo} alt="logo" />
+       < RxCross1 className={style.crossIcon} onClick={onClose} />
+           
+              <DrawerBody >
+              <div>
+          <ul 
+          className={style.navbarList}
+          >
+            <li>TRADING</li>
+            <li>TRADING INSTRUMENTS</li>
+            <li>RESEARCH & EDUCATION</li>
+            <li>COMPANY</li>
+          </ul>
+        </div>    
+          </DrawerBody>
+        <div className={style.signupLoginBtn}>
+          <Button  className={style.signupBtn}>
+            Sign Up
+          </Button>
+          <Button  className={style.login}>
+            Login
+          </Button>
+        </div>
+        </DrawerContent>
+      </Drawer>
+    </></div>
     </div>
   );
 }

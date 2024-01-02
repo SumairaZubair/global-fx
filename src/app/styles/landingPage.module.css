@@ -11,6 +11,8 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  background:linear-gradient(90deg, #6876c7 ,#7aa0d8)
+
 }
 .navbar {
   display: flex;
@@ -47,7 +49,7 @@
     gap: 4px;
     border-radius: 100px;
     font-family: "Montserrat", sans-serif;
-    background: #5CB3FF;
+    background-color: #5CB3FF;
     border: none;
     color: #FFF;
 text-align: center;
@@ -73,17 +75,177 @@ border: 2px solid #FFF;
 }
 .maindiv{
     width: 75%;
-    margin-top: 50px;
+    height: auto;
+    margin-top: 60px;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: antiquewhite;
+    /* background-color: rgb(53, 50, 46); */
 }
 .text{
-    width: 47%;
-    background-color: rgb(100, 58, 7);
+    width: 50%;
+    font-size: 34px;
+    font-style: normal;
+    line-height: 130%; /* 52px */
+    /* text-shadow: 2px 2px 4px #000000, -2px -2px 4px #ffffff; */
+    text-shadow: 2px 2px 4px #9e9797;
 
+    font-family: "Montserrat", sans-serif;
+     color: #FFF;
 }
 .boldLetters{
-    
+    color: #FFF;
+font-size: 36px;
+font-style: normal;
+font-weight: 800;
+line-height: 130%; /* 52px */
+
+font-family: "Montserrat", sans-serif;
+
+text-transform: capitalize;
+}
+.mobileImag{
+
+}
+.boxShadow{
+    width: 380px;
+height: 380px;
+border-radius: 380px;
+background: rgba(255, 255, 255, 0.11);
+/* box-shadow: 20px 20px 60px #97969641, -20px -20px 60px #ffffff36; */
+
+ ;
+}
+.regestrationBtn{
+    display: flex;
+padding: 16px 34px;
+flex-direction: column;
+align-items: flex-start;
+border-radius: 100px;
+background: #5CB3FF;
+color: #FFF;
+text-align: center;
+font-family: "Montserrat", sans-serif;
+font-size: 18px;
+font-style: normal;
+border: none;
+font-weight: 500;
+box-shadow: 0px 6px 8px 0px rgba(5, 23, 97, 0.10);
+}
+.whiteMain{
+    width: 70%;
+    padding: 20px;
+    border-radius: 15px;
+    margin-top: 10%;
+    background-color: #FFF;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.globalfxP{
+    color: #101010;
+text-align: center;
+font-family: "Montserrat", sans-serif;
+font-size: 22px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+.globalFxBoldLetter{
+    font-weight: 700;
+}
+.guidence{
+    width: 70%;
+    height: 250px;
+    margin-bottom: 40px;
+    border-radius: 20px;
+    display: flex;
+    padding: 20px;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgba(61, 65, 153, 0.60);
+    }
+    .guidelineData{
+        width: 140px;
+        padding: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .dataP{
+        color: #FFF;
+        font-family: "Montserrat", sans-serif;
+font-size: 17px;
+text-align: start;
+font-style: normal;
+padding-left: 20px;
+font-weight: 500;
+margin-top: 40px;
+line-height: 135.687%;
+}
+.mobileView{
+    display: none;
+}
+
+@media (max-width:768px){
+    .mobileView{
+        display: block;
+    }
+    .drawer{
+        background-color: #ffffff2a;
+    }
+    .crossIcon{
+        font-size: 25px;
+     text-align: right;
+    }
+    .mobileView{
+        display: block;
+    }
+    .main{
+        width: 100%;
+    }
+    .navbar{
+        display: none;
+    }
+    .logo{
+        display: none;
+    }
+    .maindiv{
+        flex-direction: column;
+        width: 100%;
+        height: 400px;
+    }
+    .text{
+        font-size: 14px;
+        font-size: 14px;
+        width: 40%;
+        padding: 50px;
+        display: flex;
+        flex-direction: column;
+        /* justify-content: space-evenly; */
+        align-items: center;
+    }
+    .boldLetters{
+        font-size: 14px;
+    }
+    .mobileImg{
+        width: 100%;
+    }
+    .navbarList {
+        flex-direction: column;
+        align-items:center ;
+    }
+    .navbarList li{
+        padding-top: 20px;
+        padding-bottom: 20px;
+        color: #7aa0d8;
+    }
+    .signupLoginBtn{
+        
+    }
+    .signupBtn, .login{
+    width: 150px;
+    background-color: #6876c7;
+    color: white;
+    }
 }
