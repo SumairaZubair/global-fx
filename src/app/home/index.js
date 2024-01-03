@@ -1,9 +1,10 @@
 "use client"
-import logo from "../../../public/assets/images/Group 2.png";
+import logo from "../../../public/assets/images/Group2.png";
 import Image from "next/image";
-import mobile from "../../../public/assets/images/mobile.png";
+import { IoMdMenu } from "react-icons/io";
 import { Button } from "@chakra-ui/react"
 import React, {useState} from "react";
+import mobile from '../../../public/assets/images/mobile.png'
 // import style from '../page.module.css'
 import { RxCross1 } from "react-icons/rx";
 import guideline from '../home/data'
@@ -21,13 +22,18 @@ import {
   Stack,
   Radio,
 } from '@chakra-ui/react'
+import RenderResources from "../resources/resources";
+import TradingNews from "../imageSlider/imageSlider";
+import EducationalResources from "../educationalResources/educationalRes";
+import VideoSlider from "../videoSlider/videoSlider";
+import LiveCurrency from "../liveCurrency/liveCurrency";
 export default function LandingPage() {
    let data= guideline
    const { isOpen, onOpen, onClose } = useDisclosure()
-   const [placement, setPlacement] = useState('top')
-  return (
+  return (<>
+ 
     <div className={style.main}>
-      {/* <div className={style.navbar}>
+      <div className={style.navbar}>
         <Image className={style.logo} src={logo} alt="logo" />
         <div>
           <ul className={style.navbarList}>
@@ -46,6 +52,48 @@ export default function LandingPage() {
           </Button>
         </div>
       </div>
+      <div className={style.mobileView}>
+<>
+<div className={style.logoMenu}>
+<Image className={style.logo} src={logo} alt="logo" />
+
+<IoMdMenu className={style.menuIcone} onClick={onOpen} />
+
+
+      {/* <Button colorScheme='blue' onClick={onOpen}>
+      <IoMdMenu className={style.men}/>
+      </Button> */}
+</div>
+      <Drawer placement={'right'} onClose={onClose} isOpen={isOpen}>
+        <DrawerOverlay />
+        <DrawerContent className={style.drawer}>
+        <Image className={style.logo} src={logo} alt="logo" />
+       < RxCross1 className={style.crossIcon} onClick={onClose} />
+           
+              <DrawerBody >
+              <div>
+          <ul 
+          className={style.navbarList}
+          >
+            <li>TRADING</li>
+            <li>TRADING INSTRUMENTS</li>
+            <li>RESEARCH & EDUCATION</li>
+            <li>COMPANY</li>
+          </ul>
+        </div>    
+          </DrawerBody>
+        <div className={style.signupLoginBtn}>
+          <Button  className={style.signupBtn}>
+            Sign Up
+          </Button>
+          <Button  className={style.login}>
+            Login
+          </Button>
+        </div>
+        </DrawerContent>
+      </Drawer>
+    </>
+    </div>
       <div className={style.maindiv}>
         <div className={style.text}>
           <p>
@@ -75,42 +123,13 @@ export default function LandingPage() {
           <p className={style.dataP}>{item.text}</p>
         </div>
       ))}
-      </div> */}
-<div className={style.mobileView}>
-<>
-      
-      <Button colorScheme='blue' onClick={onOpen}>
-        Open
-      </Button>
-      <Drawer placement={placement} onClose={onClose} isOpen={isOpen}>
-        <DrawerOverlay />
-        <DrawerContent className={style.drawer}>
-        <Image className={style.logo} src={logo} alt="logo" />
-       < RxCross1 className={style.crossIcon} onClick={onClose} />
-           
-              <DrawerBody >
-              <div>
-          <ul 
-          className={style.navbarList}
-          >
-            <li>TRADING</li>
-            <li>TRADING INSTRUMENTS</li>
-            <li>RESEARCH & EDUCATION</li>
-            <li>COMPANY</li>
-          </ul>
-        </div>    
-          </DrawerBody>
-        <div className={style.signupLoginBtn}>
-          <Button  className={style.signupBtn}>
-            Sign Up
-          </Button>
-          <Button  className={style.login}>
-            Login
-          </Button>
-        </div>
-        </DrawerContent>
-      </Drawer>
-    </></div>
+      </div>
     </div>
+<RenderResources/>
+<TradingNews/>
+<EducationalResources/>
+<LiveCurrency/>
+{/* <VideoSlider/> */}
+    </>
   );
 }

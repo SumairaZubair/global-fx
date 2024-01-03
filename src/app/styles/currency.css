@@ -1,0 +1,16 @@
+.currency-main{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.table-list Th{
+    border: 1px  solid rgba(230, 231, 230, 0.712);
+    border-top: none;
+    font-size: 14px;
+    font-weight: 400;
+    color: rgb(170, 169, 169);
+    border-left: none;
+    
+}

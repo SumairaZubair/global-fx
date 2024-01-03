@@ -1,0 +1,45 @@
+
+
+.arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 24px;
+    color: white;
+    cursor: pointer;
+  }
+  .videoContainer{
+    background-color: rgb(158, 137, 104);
+  }
+  .slick-track{
+    width: 100% !important;
+    transform: translate3d(0px, 0px, 0px) !important;
+  }
+  .arrow:hover {
+    color: #ddd;
+  }
+  /* styles/VideoSlider.module.css */
+.slick-slider {
+    background-color: aqua;
+    width: 80%;
+    margin: 0 auto;
+  }
+  .fdiv{
+    background-color: blue;
+  }
+  .slick-prev,
+  .slick-next {
+    font-size: 24px;
+    color: white;
+  }
+  
+  .slick-prev {
+    left: -40px;
+  }
+  
+  .slick-next {
+    right: -40px;
+  }
+  
+  /* ... rest of the styles ... */
+  
