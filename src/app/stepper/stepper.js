@@ -70,6 +70,9 @@ export default function CustomStepper() {
           <span style={{width:'280px' ,textAlign:'center',color:'white'}}>Deposit & Verification</span>
           <span style={{width:'190px', textAlign:'end',color:'white'}}>Start Trading</span>
          </div>
+         <div  className='signup-btn-div'>
+            <button className='signupBtn'>Sign up today</button>
+         </div>
         </div>
             </div>
     </div>

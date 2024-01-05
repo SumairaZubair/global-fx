@@ -15,10 +15,19 @@
 
 }
 .navbar {
+    width: 100%;
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  margin: 20px;
+  z-index: 1;
+  justify-content: center;
+  padding: 10px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background:linear-gradient(90deg, #6876c7 ,#7aa0d8)
+}
+.sticky-navbar{
+    width: 100%;
 }
 .navbarList {
   width: 590px;
@@ -76,7 +85,7 @@ border: 2px solid #FFF;
 .maindiv{
     width: 75%;
     height: auto;
-    margin-top: 60px;
+    margin-top: 10%;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -112,9 +121,12 @@ text-transform: capitalize;
 height: 380px;
 border-radius: 380px;
 background: rgba(255, 255, 255, 0.11);
-/* box-shadow: 20px 20px 60px #97969641, -20px -20px 60px #ffffff36; */
-
- ;
+}
+.logo{
+    padding-right: 40px;
+}
+.logoMenu{
+    display: none;
 }
 .regestrationBtn{
     display: flex;
@@ -192,6 +204,10 @@ line-height: 135.687%;
     .mobileView{
         width: 100%;
         display: block;
+        position: fixed;
+        top: 0;
+        background:linear-gradient(90deg, #6876c7 ,#7aa0d8);
+        z-index: 1;
     }
     .drawer{
         background-color: #ffffff;
@@ -199,9 +215,6 @@ line-height: 135.687%;
     .crossIcon{
         font-size: 25px;
      text-align: right;
-    }
-    .mobileView{
-        display: block;
     }
     .main{
         width: 100%;
@@ -227,6 +240,7 @@ line-height: 135.687%;
     .maindiv{
         flex-direction: column;
         width: 100%;
+        margin-top: 19%;
     }
     .text{
             font-size: 14px;
@@ -297,7 +311,7 @@ line-height: 135.687%;
         padding: 20px;
         font-size: 13px;
         border-radius: 15px;
-        margin-top: 26%;
+        margin-top: 14%;
         background-color: #FFF;
         text-align: center;
         margin-bottom: 20px;

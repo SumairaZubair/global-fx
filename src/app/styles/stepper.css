@@ -19,10 +19,10 @@
 }
 .map-image{
     width: 100%;
-    height: auto;
+    height: 60vh;
     background-size: cover;
     padding-top: 20px;
-    background: linear-gradient(236deg, #728FCE 30.33%, #7281CE 44.65%, #728FCE 63.92%);
+    background: #2C3378;
 }
 .overlay-text-stepper{
     position: absolute;
@@ -57,11 +57,24 @@ margin-bottom: 50px;
     flex-direction: column;
  }
  .steps-text{
-    width: 640px;
+    width: 630px;
     display: flex;
 flex-direction: row;
 color: white;  
 align-items: center;  
+ }
+ .signup-btn-div{
+    margin-top: 5%;
+ }
+ .signupBtn{
+    display: inline-flex;
+padding: 18px 34px;
+flex-direction: column;
+align-items: flex-start;
+gap: 4px;
+font-size: 18px;
+border-radius: 100px;
+border: 1px solid #FFF;
  }
  @media (max-width:768px){
     .stepper-image-container{
@@ -80,7 +93,7 @@ align-items: center;
      .stepper-head {
         color: #FFF;
         text-align: center;
-        font-size: 38px;
+        font-size: 34px;
         font-style: normal;
         font-weight: 700;
         margin-bottom: 50px;
@@ -95,5 +108,18 @@ align-items: center;
      }
      .overlay-text-stepper{
         width: 90%;
+     }
+     .signup-btn-div{
+        margin-top: 10%;
+     }
+     .signupBtn{
+        display: inline-flex;
+    padding: 14px 28px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px;
+    font-size: 16px;
+    border-radius: 100px;
+    border: 1px solid #FFF;
      }
  }
