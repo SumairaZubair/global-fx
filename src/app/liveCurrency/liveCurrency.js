@@ -91,16 +91,16 @@ import {
   TableContainer,
 } from '@chakra-ui/react';
 import '../styles/currency.css';
+import { MdKeyboardArrowUp, MdKeyboardArrowDown } from "react-icons/md";
 import currencyData from './currencyData'
 export default function LiveCurrency() {
   return (
     <div className='currency-main'>
-      <h1>Live Currency & Commodities Quotes</h1>
-      <p>Trade a Choice of Global Forex Pairs and Commodities Online</p>
+      <h1 className='currency-head'>Live Currency & Commodities Quotes</h1>
+      <p className='currency-p'>Trade a Choice of Global Forex Pairs and Commodities Online</p>
       <div className='table'>
         <TableContainer>
-          <Table variant='simple' colorScheme=        'teal' size={'md'}>
-            <TableCaption>Currency Quotes</TableCaption>
+          <Table variant='simple'  size={'sm'}>
             <Thead>
               <Tr className="table-list">
                 <Th>ticker</Th>
@@ -117,21 +117,33 @@ export default function LiveCurrency() {
             <Tbody>
               {currencyData.map((currency) => (
                 <Tr key={currency.id}>
-                  <Td style={{paddingRight:'4px' , width:'100px'  }}>{currency.ticker}</Td>
-                  <Td style={{paddingRight:'4px' , width:'100px'  }}>{currency.last}</Td>
-                  <Td style={{paddingRight:'4px' , width:'100px'  }}>{currency.chg}</Td>
-                  <Td style={{paddingRight:'4px' , width:'100px'  }}>{currency.chg1}</Td>
-                  <Td style={{paddingRight:'4px' , width:'100px'  , display:'block'}}>{currency.bid}</Td>
-                  <Td style={{paddingRight:'4px' , width:'100px'  }}>{currency.ask}</Td>
-                  <Td style={{paddingRight:'4px' , width:'100px'  }}>{currency.high}</Td>
-                  <Td style={{paddingRight:'4px' , width:'100px'  }}>{currency.low}</Td>
-                  <Td style={{paddingRight:'4px' , width:'100px'  , display:'block'}}>{currency.rating}</Td>
+                  <Td className='ticker' style={{paddingRight:'4px', paddingTop:'16px',paddingBottom:"16px" , width:'120px'}}>{currency.ticker}</Td>
+                  <Td className='chg'>{currency.last}</Td>
+                  <Td className='chg1'>{currency.chg}</Td>
+                  <Td className='chg1'>{currency.chg1}</Td>
+                  <Td className='ask'>{currency.bid}</Td>
+                  <Td className='ask'>{currency.ask}</Td>
+                  <Td className='ask'>{currency.high}</Td>
+                  <Td className='ask'>{currency.low}</Td>
+                  <Td>
+                  {currency.rating === "Buy" ? (
+                      <span style={{ color: "#45a9ec" ,display:'flex' }}>
+                        <MdKeyboardArrowUp /> Buy
+                      </span>
+                    ) : (
+                      <span style={{ color: "red",display:'flex' }}>
+                        <MdKeyboardArrowDown /> Sell
+                      </span>
+                    )}
+                  </Td>
+                  
                 </Tr>
               ))}
             </Tbody>
           </Table>
         </TableContainer>
       </div>
+        <button className='currency-pagebtn'>Register now</button>
     </div>
   );
 }

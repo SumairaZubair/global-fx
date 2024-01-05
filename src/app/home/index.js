@@ -27,6 +27,9 @@ import TradingNews from "../imageSlider/imageSlider";
 import EducationalResources from "../educationalResources/educationalRes";
 import VideoSlider from "../videoSlider/videoSlider";
 import LiveCurrency from "../liveCurrency/liveCurrency";
+import WebTraderPlatform from "../platform/webTraderPlatform";
+import Stepper from "../stepper/stepper";
+import CustomStepper from "../stepper/stepper";
 export default function LandingPage() {
    let data= guideline
    const { isOpen, onOpen, onClose } = useDisclosure()
@@ -128,7 +131,9 @@ export default function LandingPage() {
 <RenderResources/>
 <TradingNews/>
 <EducationalResources/>
-<LiveCurrency/>
+{/* <LiveCurrency/> */}
+<WebTraderPlatform/>
+<CustomStepper/>
 {/* <VideoSlider/> */}
     </>
   );

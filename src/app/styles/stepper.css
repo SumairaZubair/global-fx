@@ -1,0 +1,99 @@
+.stepper-main{
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.css-y9i95k {
+    /* font-size: var(--stepper-description-font-size); */
+    margin-left: -70px;
+    /* font-size: 25px; */
+    margin-top: 15px;
+}
+.stepper-image-container{
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+.map-image{
+    width: 100%;
+    height: auto;
+    background-size: cover;
+    padding-top: 20px;
+    background: linear-gradient(236deg, #728FCE 30.33%, #7281CE 44.65%, #728FCE 63.92%);
+}
+.overlay-text-stepper{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 75%;
+    height: auto;
+}
+.css-kq5oaw[data-status=complete] {
+    background: #5CB3FF !important;
+    color: white;
+    font-size: 20px;
+ }
+ .stepper-head{
+    color: #FFF;
+text-align: center;
+font-size: 44px;
+font-style: normal;
+font-weight: 700;
+margin-bottom: 50px;
+ } 
+ .steps{
+    width: 600px;
+    justify-content: space-between;
+    flex-direction: column;
+ }
+ .steps-text{
+    width: 640px;
+    display: flex;
+flex-direction: row;
+color: white;  
+align-items: center;  
+ }
+ @media (max-width:768px){
+    .stepper-image-container{
+        position: relative;
+        width: 100%;
+        height: auto;
+    }
+    .steps{
+        width: 100%;
+        justify-content: space-between;
+        flex-direction: column;
+     }
+     .map-image{
+        height: 50vh;
+     }
+     .stepper-head {
+        color: #FFF;
+        text-align: center;
+        font-size: 38px;
+        font-style: normal;
+        font-weight: 700;
+        margin-bottom: 50px;
+    }
+     .steps-text{
+        width: 104%;
+        display: flex;
+    flex-direction: row;
+    color: white;  
+    align-items: center;
+    font-size: 14px;  
+     }
+     .overlay-text-stepper{
+        width: 90%;
+     }
+ }

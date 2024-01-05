@@ -1,12 +1,10 @@
 .pat{
     width: 100%;
     display: flex;
-height: 738px;
+height: auto;
 flex-direction: column;
 justify-content: center;
 align-items: center;
-align-self: stretch;
-
 background: linear-gradient(236deg, #728FCE 30.33%, #7281CE 44.65%, #728FCE 63.92%);
 }
 .image-container {
@@ -17,6 +15,7 @@ background: linear-gradient(236deg, #728FCE 30.33%, #7281CE 44.65%, #728FCE 63.9
   
   .background-image {
     width: 100%;
+    height: auto;
     background-size: cover;
     background: linear-gradient(236deg, #728FCE 30.33%, #7281CE 44.65%, #728FCE 63.92%);
 }
@@ -68,15 +67,23 @@ line-height: 140%;
         flex-direction: column;
         bottom: 10%;
       }
+      .background-image {
+        width: 100%;
+        height: 90vh;
+        background-size: cover;
+        background: linear-gradient(236deg, #728FCE 30.33%, #7281CE 44.65%, #728FCE 63.92%);
+    }
+     
       .educational-text{
         width: 90%;
         height: auto;
       }
       .educational-img{
-        width: 100%;
+        width: 90%;
+        margin-left: 10px;
         margin-top: 30px;
       }
       .man{
-        width: 90%;
+        width: 100%;
       }
   }

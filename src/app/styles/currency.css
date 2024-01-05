@@ -14,3 +14,50 @@
     border-left: none;
     
 }
+.table{
+    background-color: rgb(255, 251, 247);
+    padding: 40px;
+    border-radius: 20px;
+    margin-top: 30px;
+    margin-bottom: 40px;
+}
+.ticker{
+    color: #45a9ec;
+    font-weight: 600;
+}
+.chg, .ask{
+    color: black;
+}
+.chg1{
+    color: rgb(10, 194, 178);
+    font-weight: 400;
+}
+.currency-head{
+    color: #101010;
+text-align: center;
+font-size: 44px;
+font-style: normal;
+margin-top: 30px;
+font-weight: 700;
+text-transform: capitalize;
+margin-bottom: 20px;
+}
+.currency-p{
+    color: #101010;
+text-align: center;
+font-size: 18px;
+font-style: normal;
+font-weight: 400;
+}
+.currency-pagebtn{
+    display: flex;
+padding: 15px 30px;
+flex-direction: column;
+align-items: flex-start;
+gap: 4px;
+border-radius: 100px;
+color: white;
+font-size: 22px;
+background: #5CB3FF;
+margin-bottom: 40px;
+}
