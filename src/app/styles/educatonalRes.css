@@ -69,18 +69,18 @@ line-height: 140%;
       }
       .background-image {
         width: 100%;
-        height: 90vh;
+        height: 100vh;
         background-size: cover;
         background: linear-gradient(236deg, #728FCE 30.33%, #7281CE 44.65%, #728FCE 63.92%);
     }
      
       .educational-text{
-        width: 90%;
+        width: 97%;
         height: auto;
+        padding: 15px;
       }
       .educational-img{
         width: 90%;
-        margin-left: 10px;
         margin-top: 30px;
       }
       .man{
