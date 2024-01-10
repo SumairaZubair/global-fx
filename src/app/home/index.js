@@ -1,5 +1,5 @@
 "use client";
-import logo from "../../../public/assets/images/Group2.png";
+// import logo from "../../../public/assets/images/Group2.png";
 import Image from "next/image";
 import { IoMdMenu } from "react-icons/io";
 import { Button } from "@chakra-ui/react";
@@ -32,13 +32,14 @@ import Stepper from "../stepper/stepper";
 import CustomStepper from "../stepper/stepper";
 import LandingPageFooter from "../footer/landingPageFooter";
 import Accordion from "../footer/landingPageFooter";
+import Navbar from "../navbar/navbar";
 export default function LandingPage() {
   let data = guideline;
-  const { isOpen, onOpen, onClose } = useDisclosure();
+  // const { isOpen, onOpen, onClose } = useDisclosure();
   return (
     <>
       <div className={style.main}>
-        <div className="sticky-navbar">
+        {/* <div className="sticky-navbar">
           <div className={style.navbar}>
             <Image className={style.logo} src={logo} alt="logo" />
             <div>
@@ -84,7 +85,8 @@ export default function LandingPage() {
               </DrawerContent>
             </Drawer>
           </>
-        </div>
+        </div> */}
+        <Navbar/>
         <div className={style.maindiv}>
           <div className={style.text}>
             <p>
@@ -93,7 +95,7 @@ export default function LandingPage() {
               with Our Exclusive Path of Stable, Long-term Income through
               Stocks, Indices, and Digital Assets.
             </p>
-            <Button className={style.regestrationBtn}>Register now</Button>
+            <button className={style.regestrationBtn}>Register now</button>
           </div>
           <div className={style.mobileImag}>
             <div className={style.boxShadow}>

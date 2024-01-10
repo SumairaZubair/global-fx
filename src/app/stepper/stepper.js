@@ -18,8 +18,8 @@ import { AiOutlineStock } from "react-icons/ai";
 import map from '../../../public/assets/images/map.png'
 import Image from 'next/image';
 const StepRoutes = [
-  '/news',
   '/deposite',
+  '/news',
   '/next',
 ];
 

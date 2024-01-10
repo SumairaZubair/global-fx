@@ -1,0 +1,52 @@
+.account-verification-main{
+    width: 100%;
+    height: auto;
+    padding: 5% 15%;
+    /* background-color: aqua; */
+    background-image: url('../../../public/assets/images/account.png');
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.account-verification-main-text-div{
+    width: 100%;
+    height: auto;
+    /* background-color: blanchedalmond; */
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    gap: 40px;
+    flex-direction: column;
+}
+.account-verification-main-inputWithText{
+    width: 100%;
+    height: auto;
+    background-color: cadetblue;
+}
+.account-verification-main-head{
+    color: #FFF;
+font-size: 44px;
+font-style: normal;
+font-weight: 700;
+line-height: 130%; 
+}
+.account-verification-main-para{
+    color: #FFF;
+font-size: 14px;
+font-style: normal;
+font-weight: 500;
+line-height: 26px; 
+}
+.account-verification-main-inputWithText-text-1{
+    color: #FFF;
+font-size: 18px;
+font-style: normal;
+font-weight: 700;
+line-height: 26px; 
+}
+.account-verification-main-inputWithText-inputs{
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    
+}

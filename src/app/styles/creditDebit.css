@@ -1,0 +1,117 @@
+.credit-content{
+    width: 100%;
+    height: auto;
+    background-color: #FAFBFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 44px;
+    
+}
+.data-content{
+width: 70%;
+height: 350px;
+padding: 20px;
+margin-bottom: 30px;
+border-radius: 20px;
+background: #FFF;
+display: flex;
+justify-content: space-between;
+}
+.data-img{
+    width: 95%;
+    height: 300px;
+
+}
+.data-title-desp{
+    width: 90%;
+}
+.cradit-title{
+    color: #101010;
+font-size: 38px;
+font-style: normal;
+font-weight: 700;
+margin-top: 30px;
+}
+.cradit-desp{
+    color: #101010;
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: 26px;
+margin-top: 40px;
+}
+.precautions{
+    width: 100%;
+    /* height: 200px; */
+    color: white;
+    background-color: #4768AE;
+    padding: 3% 20%;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+}
+.precautions-p{
+    color: #FFF;
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: 20px; /* 162.5% */
+}
+.infoicone{
+    font-size: 25px;
+}
+@media (max-width:768px){
+    .credit-content{
+        width: 100%;
+        height: auto;
+        background-color: #FAFBFF;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding: 24px;
+    }
+    .data-content{
+        width: 100%;
+        height: auto;
+        padding: 20px;
+        margin-bottom: 30px;
+        border-radius: 20px;
+        background: #FFF;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        }
+        .data-img{
+            width: 100%;
+            height: 300px;
+        
+        }
+        .data-title-desp{
+            width: 100%;
+        }
+        .precautions {
+            width: 100%;
+            /* height: 200px; */
+            color: white;
+            background-color: #4768AE;
+            padding: 20px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .infoicone{
+            display: none;
+            font-size: 25px;
+        }
+        .precautions-p{
+            color: #FFF;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 20px; /* 162.5% */
+        }
+}
