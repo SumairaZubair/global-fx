@@ -2,26 +2,21 @@
     width: 100%;
     height: auto;
     padding: 5% 15%;
-    /* background-color: aqua; */
     background-image: url('../../../public/assets/images/account.png');
     display: flex;
     justify-content: center;
-    align-items: center;
 }
 .account-verification-main-text-div{
     width: 100%;
-    height: auto;
-    /* background-color: blanchedalmond; */
+    height: 400px;
     display: flex;
     justify-content: space-between;
-    padding: 20px;
     gap: 40px;
     flex-direction: column;
 }
 .account-verification-main-inputWithText{
     width: 100%;
-    height: auto;
-    background-color: cadetblue;
+    height: 500px;
 }
 .account-verification-main-head{
     color: #FFF;
@@ -36,6 +31,8 @@ font-size: 14px;
 font-style: normal;
 font-weight: 500;
 line-height: 26px; 
+padding-right: 40px;
+
 }
 .account-verification-main-inputWithText-text-1{
     color: #FFF;
@@ -43,10 +40,62 @@ font-size: 18px;
 font-style: normal;
 font-weight: 700;
 line-height: 26px; 
+margin-bottom: 30px;
 }
 .account-verification-main-inputWithText-inputs{
-    width: 70%;
+    width: 100%;
+    padding: 10px;
+    background-color: aliceblue;
     display: flex;
-    justify-content: center;
+    gap: 20px;
+    align-items: center;
+    margin-bottom: 30px;
+    border-radius: 5px;
+    /* justify-content: space-between; */
+
+}
+.inputs-file-icon{
+    font-size: 25px;
     
+}
+.inputs-file-text{
+    color: #101010;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 32px
+}
+.account-verification-main-inputWithText-text{
+    color: #FFF;
+font-size: 14px;
+font-style: normal;
+font-weight: 500;
+line-height: 26px;
+margin-top: 15%;
+}
+
+@media (max-width:768px){
+    .account-verification-main {
+        width: 100%;
+        height: auto;
+        padding: 20px;
+        background-image: url(/_next/static/media/account.e323019b.png);
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+    .account-verification-main-text-div {
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: space-between;
+        gap: 40px;
+        flex-direction: column;
+    }
+    .account-verification-main-inputWithText {
+        width: 100%;
+        height: auto;
+    }
+
 }

@@ -44,7 +44,7 @@ import {
               <Image className={style.logo} src={logo} alt="logo" />
               <IoMdMenu className={style.menuIcone} onClick={onOpen} />
             </div>
-            <Drawer placement={"right"} onClose={onClose} isOpen={isOpen}>
+            <Drawer size={"full"} placement={"right"} onClose={onClose} isOpen={isOpen}>
               <DrawerOverlay />
               <DrawerContent className={style.drawer}>
                 <Image className={style.logo} src={logo} alt="logo" />

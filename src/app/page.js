@@ -1,14 +1,26 @@
-import { ChakraProvider } from '@chakra-ui/react';
-import Image from 'next/image'
+// import { ChakraProvider } from '@chakra-ui/react';
+// import Image from 'next/image'
 import LandingPage from './home'
-import { Children } from 'react';
-export default function Home() {
+// import { Children } from 'react';
+// export default function Home() {
+//   return (
+//     <main >
+//        <ChakraProvider>
+//     <LandingPage/>
+// {/* {children} */}
+//     </ChakraProvider>
+//     </main>
+//   )
+// }
+import { ChakraProvider } from '@chakra-ui/react';
+
+function MyApp({ Component, pageProps }) {
   return (
-    <main >
-       <ChakraProvider>
-    <LandingPage/>
-{/* {children} */}
+    <ChakraProvider>
+       {/* <LandingPage/> */}
+      <Component {...pageProps} />
     </ChakraProvider>
-    </main>
-  )
+  );
 }
+
+export default MyApp;
