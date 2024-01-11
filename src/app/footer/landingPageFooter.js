@@ -2,8 +2,15 @@ import "../styles/landingPageFooter.css";
 import logo from "../../../public/assets/images/Group2.png";
 import Image from "next/image";
 import MobileViewFooter from "./mobileviewFooter";
-
+import { useRouter } from 'next/navigation';
 export default function LandingPageFooter() {
+  const router = useRouter();
+  const StepRoutes = [
+    '/trading',
+    '/news',
+    '/next',
+  ];
+
   return (
     <div>
       <div className="footer-div">
@@ -23,7 +30,7 @@ export default function LandingPageFooter() {
               <p className="text-1">© 2023. All Rights Reserved.</p>
             </div>
             <div>
-              <p className="list">TRADING</p>
+              <p className="list" onClick={()=>router.push('/trading')}>TRADING</p>
               <p className="text-1">Account Types</p>
               <p className="text-1">Deposits & Withdrawals</p>
             </div>

@@ -17,7 +17,6 @@ import { ChakraProvider } from '@chakra-ui/react';
 function MyApp({ Component, pageProps }) {
   return (
     <ChakraProvider>
-       {/* <LandingPage/> */}
       <Component {...pageProps} />
     </ChakraProvider>
   );

@@ -11,11 +11,12 @@ import {
     DrawerOverlay,
     DrawerContent,
     DrawerCloseButton,
-    useDisclosure,
     RadioGroup,
     Stack,
     Radio,
   } from "@chakra-ui/react";
+  import { useDisclosure } from '@chakra-ui/react';
+
   export default function Navbar(){
     const { isOpen, onOpen, onClose } = useDisclosure();
 

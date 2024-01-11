@@ -1,0 +1,67 @@
+.DynamicWebTrader-main{
+    width: 100%;
+    height: auto;
+    padding: 5% 15%;
+    display: flex;
+    background-color: white;
+    justify-content: center;
+    gap: 40px;
+}
+.DynamicWebTrader-text{
+    width: 100%;
+    height: 500px;
+    /* padding: 20px; */
+}
+.DynamicWebTrader-image{
+    width: 100%;
+    height: auto;
+}
+.DynamicWebTrader-head{
+    color: #101010;
+font-size: 40px;
+font-style: normal;
+font-weight: 700;
+line-height: 140%; 
+margin-bottom: 20px;
+}
+.DynamicWebTrader-para{
+    color: #070707;
+font-size: 19px;
+font-style: normal;
+font-weight: 600;
+line-height: 150%;
+margin-bottom: 20px;
+}
+.DynamicWebTrader-para2{
+color: rgba(16, 16, 16, 0.90);
+font-size: 15px;
+font-style: normal;
+font-weight: 400;
+line-height: 150%;
+}
+@media (max-width:768px){
+    .DynamicWebTrader-main{
+        width: 100%;
+        height: auto;
+        padding: 20px;
+        display: flex;
+        background-color: white;
+        justify-content: center;
+        gap: 40px;
+        flex-wrap: wrap;
+    }
+    .DynamicWebTrader-text {
+        width: 100%;
+        height: auto;
+        /* padding: 20px; */
+    }
+    .DynamicWebTrader-head {
+        color: #101010;
+        font-size: 30px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 140%;
+        margin-bottom: 20px;
+    }
+
+}
